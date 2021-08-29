@@ -4,6 +4,7 @@
   "description": "esbuild plugin for rust files to be compiled to wasm",
   "main": "dist/index.js",
   "scripts": {
+    "build": "tsc -P ./ts/tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -38,5 +39,9 @@
   },
   "peerDependencies": {
     "esbuild": "^0.12.24"
+  },
+  "dependencies": {
+    "@types/ffi-napi": "^4.0.4",
+    "ffi-napi": "^4.0.3"
   }
 }
